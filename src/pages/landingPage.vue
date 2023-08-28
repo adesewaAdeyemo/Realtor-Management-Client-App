@@ -305,8 +305,14 @@
 <script>
 import PlanCard from "../components/ui/PlanCard.vue";
     export default {
-    components: {
-        PlanCard
-    }  
+        data(){
+            return{
+            }
+        },
+        components: {
+            PlanCard
+        },
+        methods: {
+        },
     }
 </script>

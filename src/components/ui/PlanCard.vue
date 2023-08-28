@@ -22,7 +22,7 @@ export default {
                     <h4>Basic Plan</h4>
                     <p>The Basic Plan is the simplest of all plans.</p>
                     <p>₦<strong  class='amount'>999.99</strong>/mo</p>
-                    <a class='btn custom-btn-bg btn-sm px-2 py-2 subscribe' href='/subscribe'>Subscribe Now</a>
+                    <a class='btn custom-btn-bg btn-sm px-2 py-2 subscribe' href="/subscribe?plan=basic">Subscribe Now</a>
                     <ul class='p-0 mb-5'>
                         <li>
                             <span class='icon'>&#10004</span>
@@ -65,7 +65,7 @@ export default {
                     <h4>Pro Plan</h4>
                     <p>The Pro Plan than the basic plan. Much better.</p>
                     <p>₦<strong  class="amount">999.99</strong>/mo</p>
-                    <a class="btn custom-btn-bg btn-sm px-2 py-2" href="/subscribe">Subscribe Now</a>
+                    <a class='btn custom-btn-bg btn-sm px-2 py-2 subscribe' href="/subscribe?plan=pro">Subscribe Now</a>
                     <ul class="p-0 mb-5">
                         <li>Includes Basic Plan plus:</li>
                         <li>
@@ -109,7 +109,7 @@ export default {
                       <h4>Pro Max Plan</h4>
                       <p>The Pro Plan than the basic plan. Much better.</p>
                       <p>₦<strong  class="amount">999.99</strong>/mo</p>
-                      <a class="btn custom-btn-bg btn-sm px-2 py-2" href="/subscribe">Subscribe Now</a>
+                      <a class='btn custom-btn-bg btn-sm px-2 py-2 subscribe' href="/subscribe?plan=promax">Subscribe Now</a>
                       <ul class="p-0 mb-5">
                           <li>Includes Basic Plan plus:</li>
                           <li>

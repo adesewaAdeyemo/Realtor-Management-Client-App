@@ -13,8 +13,12 @@
                     </div>
                     <div class=""></div>
                     <div class="col-md-3 col-sm-12 align-items-center d-flex justify-content-between">
-                        <a class="btn sub-btn custom-footer-btn-blank px-5 py-2" href="#" id="monthlyBtn">Monthly</a>
-                        <a class="btn sub-btn custom-footer-btn-blank px-5 py-2" href="#" id ="annualBtn">Anually</a>
+                        <!-- <select v-model="planspan">
+                        <option class="btn custom-footer-btn-blank py-2 col-5" id="monthlyBtn" value="monthly">Monthly</option>
+                        <option class="btn custom-footer-btn-blank py-2 col-5" id ="annualBtn" value="anually">Anually</option>
+                        </select> -->
+                        <input class="btn custom-footer-btn-blank py-2 col-5 usep" id="monthlyBtn" name="Monthly" placeholder="Mothly" v-model="planspan" readonly>
+                        <input class="btn custom-footer-btn-blank py-2 col-5 usep" id ="annualBtn" name="Anually" placeholder="Anually" v-model="planspan" readonly>
                     </div>
                 </div>
                 
@@ -24,7 +28,7 @@
                             <div class="d-flex align-items-center">
                                 <div class="px-3 py-4">
                                     <label for="plan" class="">
-                                        <input type="radio" name="plan" class="" style="color:#DC4D01; background:#DC4D01;">
+                                        <input type="radio" name="plan" value="basic" v-model="selectedPlan" style="color:#DC4D01; background:#DC4D01;">
                                     </label>
                                 </div>
                                 <div class="px-3 py-4">
@@ -41,7 +45,7 @@
                             <div class="d-flex align-items-center">
                                 <div class="px-3 py-4">
                                     <label for="plan" class="">
-                                        <input type="radio" name="plan" class="" style="color:#DC4D01; background:#DC4D01;">
+                                        <input type="radio" name="plan" value="pro" v-model="selectedPlan" style="color:#DC4D01; background:#DC4D01;">
                                     </label>
                                 </div>
                                 <div class="px-3 py-4">
@@ -58,7 +62,7 @@
                             <div class="d-flex align-items-center">
                                 <div class="px-3 py-4">
                                     <label for="plan" class="">
-                                        <input type="radio" name="plan" class="" style="color:#DC4D01; background:#DC4D01;">
+                                        <input type="radio" name="plan" value="promax" v-model="selectedPlan" style="color:#DC4D01; background:#DC4D01;">
                                     </label>
                                 </div>
                                 <div class="px-3 py-4">
@@ -166,7 +170,7 @@
                                 </div>
                                 <div class=''>
                                     <label for="plan" class="">
-                                        <input type="radio" name="mode" class="" style="color:#DC4D01; background:#DC4D01;" onchange="showForm('transferform')">
+                                        <input type="radio" name="mode" class="" style="color:#DC4D01; background:#DC4D01;" @change="showForm('transferform')">
                                     </label>
                                 </div>
                             </div>
@@ -176,7 +180,7 @@
                                 </div>
                                 <div class=''>
                                     <label for="plan" class="">
-                                        <input type="radio" name="mode" class="" style="color:#DC4D01; background:#DC4D01;" onchange="showForm('cardform')">
+                                        <input type="radio" name="mode" class="" style="color:#DC4D01; background:#DC4D01;" @change="showForm('cardform')">
                                     </label>
                                 </div>
                             </div>
@@ -186,7 +190,7 @@
                                 </div>
                                 <div class=''>
                                     <label for="plan" class="">
-                                        <input type="radio" name="mode" class="" style="color:#DC4D01; background:#DC4D01;" onchange="showForm('qrform')">
+                                        <input type="radio" name="mode" class="" style="color:#DC4D01; background:#DC4D01;" @change="showForm('qrform')">
                                     </label>
                                 </div>
                             </div>
@@ -292,3 +296,50 @@
         </div>
     </div>
 </template>
+
+
+<script>
+// import PlanCard from "../components/ui/PlanCard.vue";
+    export default {
+        mounted(){
+            this.selectedPlan=this.$route.query.plan;
+            
+            const monthlyBtn = document.getElementById("monthlyBtn");
+            const annualBtn = document.getElementById("annualBtn");
+
+            monthlyBtn.addEventListener("click", () => {
+            monthlyBtn.classList.add("activeBtn");
+            annualBtn.classList.remove("activeBtn");
+            });
+
+            annualBtn.addEventListener("click", () => {
+            annualBtn.classList.add("activeBtn");
+            monthlyBtn.classList.remove("activeBtn");
+            });
+
+        },
+        data(){
+            return{
+                selectedPlan: '',
+                planspan: '',
+            }
+        },
+        // components: {
+        //     PlanCard
+        // },
+        methods: {
+            showForm(formId) {
+                const forms = document.querySelectorAll(".change-form");
+
+                forms.forEach((form) => {
+                    form.style.display = "none";
+                });
+
+                const selectedForm = document.getElementById(formId);
+                if (selectedForm) {
+                    selectedForm.style.display = "block";
+                }
+                }
+            },
+        }
+</script>

@@ -12,65 +12,30 @@ faqItems.forEach((item) => {
 
 
 
-const countdownElement = document.getElementById("countdown");
-const a = document.querySelector(".a");
+// const countdownElement = document.getElementById("countdown");
+// const a = document.querySelector(".a");
 
-let seconds = 59;
+// let seconds = 59;
 
-const countdownInterval = setInterval(() => {
-seconds--;
+// const countdownInterval = setInterval(() => {
+// seconds--;
 
-const minutesText = Math.floor(seconds / 60)
-    .toString()
-    .padStart(2, "0");
-const secondsText = (seconds % 60).toString().padStart(2, "0");
-const timeText = `${minutesText}:${secondsText}`;
+// const minutesText = Math.floor(seconds / 60)
+//     .toString()
+//     .padStart(2, "0");
+// const secondsText = (seconds % 60).toString().padStart(2, "0");
+// const timeText = `${minutesText}:${secondsText}`;
 
-countdownElement.textContent = timeText;
+// countdownElement.textContent = timeText;
 
-if (seconds === 0) {
-    clearInterval(countdownInterval);
-    countdownElement.style.color = "#000";
-}
-}, 1000);
-
-
+// if (seconds === 0) {
+//     clearInterval(countdownInterval);
+//     countdownElement.style.color = "#000";
+// }
+// }, 1000);
 
 
 
-const monthlyBtn = document.getElementById("monthlyBtn");
-const annualBtn = document.getElementById("annualBtn");
-
-monthlyBtn.addEventListener("click", () => {
-  monthlyBtn.classList.add("activeBtn");
-  annualBtn.classList.remove("activeBtn");
-});
-
-annualBtn.addEventListener("click", () => {
-  annualBtn.classList.add("activeBtn");
-  monthlyBtn.classList.remove("activeBtn");
-});
-
-
-
-
-
-annualBtn.addEventListener("click", () => {
-  annualBtn.classList.add("activeBtn");
-  monthlyBtn.classList.remove("activeBtn");
-});
-function showForm(formId) {
-  const forms = document.querySelectorAll(".change-form");
-
-  forms.forEach((form) => {
-    form.style.display = "none";
-  });
-
-  const selectedForm = document.getElementById(formId);
-  if (selectedForm) {
-    selectedForm.style.display = "block";
-  }
-}
 
 
 
@@ -90,21 +55,8 @@ function copyToClipboard(elementId) {
   }
 
 
-  // const cards = document.querySelectorAll(".float-card");
-
-  // cards.forEach(card => {
-  //   card.addEventListener('mouseenter', () => {
-  //     if (card != cards.card) {
-  //       card.style.filter = "blur(10px)";
-  //     }
-  //   });
-
-  //   card.addEventListener('mouseleave', () => {
-  //     card.style.backgroundColor = "blur(10px)";
-  //   });
-  // });
+  
 const cards = document.querySelectorAll(".float-card");
-
 cards.forEach((card) => {
   card.addEventListener("mouseenter", () => {
     cards.forEach((otherCard) => {
@@ -113,10 +65,11 @@ cards.forEach((card) => {
       }
     });
   });
-
   card.addEventListener("mouseleave", () => {
     cards.forEach((otherCard) => {
       otherCard.style.filter = "none";
     });
   });
 });
+
+
