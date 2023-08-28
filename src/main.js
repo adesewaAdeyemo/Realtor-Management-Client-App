@@ -4,8 +4,6 @@ import App from './App.vue'
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-// import axios from "axios"
-// import VueAxios from "vue-axios"
 import router from "./router.js"
 
 import LandingPage from "./components/layout/LandingPage.vue"
@@ -18,14 +16,9 @@ import BaseDialog from "./components/ui/BaseDialog.vue"
 import ProfileNav from "./components/ui/ProfileNav.vue"
 
 const app = createApp(App)
-// axios.defaults.baseURL= 'http://localhost:8000/api';
-// axios.defaults.headers.common['token'] = '1234567890';
 
 
 app.use(router)
-// app.use(store)
-// app.use(axios)
-// app.use(VueAxios, axios)
 app.component("landing-page", LandingPage);
 app.component("auth-page", AuthPage);
 app.component("base-card", BaseCard);
