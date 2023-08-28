@@ -272,7 +272,21 @@ label{
 input[type=radio]{
     accent-color: #dc4d01;
 }
-    
+.float-card{
+    box-shadow: 1px .5px .5px rgba(131, 129, 129, 0.5), -1px -.5px .5px rgba(131, 129, 129, 0.5);
+    transition: all 0.3s ease;
+ }   
+/* .float-card:hover{
+    box-shadow: 1px .5px 1px rgba(131, 129, 129, 0.5), -1px -.5px 1px rgba(131, 129, 129, 0.5);
+    filter: blur(10px);
+ }   
+.float-card:hover .subscribe {
+    display: block;
+    opacity: 1;
+} */
+.full-width{
+    width: 100%;
+}
 @media screen and (max-width: 1400px) {
 h1{
     font-size: 46px;

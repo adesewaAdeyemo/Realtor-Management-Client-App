@@ -88,3 +88,35 @@ function copyToClipboard(elementId) {
         });
     }
   }
+
+
+  // const cards = document.querySelectorAll(".float-card");
+
+  // cards.forEach(card => {
+  //   card.addEventListener('mouseenter', () => {
+  //     if (card != cards.card) {
+  //       card.style.filter = "blur(10px)";
+  //     }
+  //   });
+
+  //   card.addEventListener('mouseleave', () => {
+  //     card.style.backgroundColor = "blur(10px)";
+  //   });
+  // });
+const cards = document.querySelectorAll(".float-card");
+
+cards.forEach((card) => {
+  card.addEventListener("mouseenter", () => {
+    cards.forEach((otherCard) => {
+      if (otherCard !== card) {
+        otherCard.style.filter = "blur(10px)";
+      }
+    });
+  });
+
+  card.addEventListener("mouseleave", () => {
+    cards.forEach((otherCard) => {
+      otherCard.style.filter = "none";
+    });
+  });
+});

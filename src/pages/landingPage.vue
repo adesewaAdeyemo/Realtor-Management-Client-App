@@ -1,33 +1,5 @@
 <template>
-    <div class="wrapper">
-        <nav style="background: #fff;" class="d-flex justify-content-between align-items-center py-4 header-nav" id="">
-            <ul style="margin-bottom:0px" class="d-flex justify-content-between p-0 align-items-center">
-                <li class="item button allitemmargin"><span class="btn custom-btn-blank btn-sm px-5 py-0"><pre>        </pre></span></li>
-                <li class="item allitemmargin px-5"><a href="/index.html#about">About Us</a></li>
-                <li class="item button allitemmargin"><a href="/index.html#contact">Contact</a></li>
-            </ul>
-            <ul style="margin-bottom:0px" class="d-flex justify-content-between align-items-center">
-                <li class="item button allitemmargin px-5"><a class="btn custom-btn-outline btn-sm px-5 py-2" href="/signin.html">Sign In</a></li>
-                <li class="item button allitemmargin"><a class="btn custom-btn-bg btn-sm px-5 py-2" href="signup.html">Join Our Realtor Team</a></li>
-            </ul>
-        </nav>
-        <nav style="background: #fff;" class="d-flex justify-content-between align-items-center pt-3 mobile-nav mb-3" id="">
-            <span class="btn custom-btn-blank btn-sm px-3 py-0"><pre>        </pre></span>
-            <div class="dropdown">
-                <span type="button" data-bs-toggle="dropdown" aria-expanded="true">
-                    <i class="fa fa-bars"></i>
-                </span>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/index.html#about">About Us</a></li>
-                    <li><a class="dropdown-item" href="/index.html#contact">Contact</a></li>
-                    <li><a  class="dropdown-item" href="/signin.html">Sign In</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item custom-btn-bg" href="signup.html">Join Our Realtor Team</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <div class="border-bottom"></div>
+  <landing-page>
     <div class="wrapper">
         <section class="row header-section">
             <div class="col-md-7 col-sm-12 py-2">
@@ -48,7 +20,7 @@
                     </li>
                 </ul>
             <div class="header-btn">
-                <a class="btn custom-btn-bg btn-sm px-5 py-2" href="signup.html">Join Our Realtor Team</a>
+                <base-button mode="opaque" to="signup" link>Join Our Realtor Team</base-button>
             </div>
             </div>
             <div class="col-md-5 col-sm-12">
@@ -67,7 +39,7 @@
                 </div>
             </div>
             <div class="btn-mobile">
-                <a class="btn custom-btn-bg btn-sm px-5 py-2 my-5 col-12" href="signup.html">Join Our Realtor Team</a>
+                <a class="btn custom-btn-bg btn-sm px-5 py-2 my-5 col-12" href="signup">Join Our Realtor Team</a>
             </div>
         </section>
     </div>
@@ -160,148 +132,7 @@
             <div class="text-header">
                 <h3>Our Subscription Plans</h3>
             </div>
-            <div class="row gx-5 g-4 price-row">
-                <div class="col-lg-4 col-md-12 align-items-center line">
-                    <div class="border border-radius custom-section-bg">
-                        <div class="pricing p-5 note">
-                            <!-- <label for="plan">
-                                <input type="radio" name="plan" class="" style="color:#DC4D01; background:#DC4D01;">
-                            </label> -->
-                            <h4>Basic Plan</h4>
-                            <p>The Basic Plan is the simplest of all plans.</p>
-                            <p>₦<strong  class="amount">999.99</strong>/mo</p>
-                            <a class="btn custom-btn-bg btn-sm px-2 py-2" href="/subscribe.html">Subscribe Now</a>
-                            <ul class="p-0 mb-5">
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet 
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet 
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet 
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet
-                                </li>
-                            </ul>
-                            <p>See all feature</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12 line">
-                    <div class="border border-radius custom-section-bg">
-                        <div class="pricing p-5 note">
-                            <h4>Pro Plan</h4>
-                            <p>The Pro Plan than the basic plan. Much better.</p>
-                            <p>₦<strong  class="amount">999.99</strong>/mo</p>
-                            <a class="btn custom-btn-bg btn-sm px-2 py-2" href="/subscribe.html">Subscribe Now</a>
-                            <ul class="p-0 mb-5">
-                                <li>Includes Basic Plan plus:</li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet 
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet 
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet 
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet
-                                </li>
-                            </ul>
-                            <p>See all feature</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12 line">
-                    <div class="note">
-                        <div class="custom-section-bg border border-radius pricing p-5 ">
-                            <h4>Pro Max Plan</h4>
-                            <p>The Pro Plan than the basic plan. Much better.</p>
-                            <p>₦<strong  class="amount">999.99</strong>/mo</p>
-                            <a class="btn custom-btn-bg btn-sm px-2 py-2" href="/subscribe.html">Subscribe Now</a>
-                            <ul class="p-0 mb-5">
-                                <li>Includes Basic Plan plus:</li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet 
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet 
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet 
-                                </li>
-                                <li>
-                                    <span class="icon">&#10004</span>
-                                    Lorem ipsum dolor, sit amet
-                                </li>
-                            </ul>
-                            <p>See all feature</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <plan-card/>
         </section>
     </div>
     <div class="wrapper">
@@ -319,11 +150,12 @@
                     <span class="header-btn btn custom-btn-bg btn-sm px-5 py-2 my-4">Join Our Realtor Team</span>
                 </div>
                 <div class="col-md-8 col-sm-12">
-                    <img src="../assets/PICS/Frame 1.svg" width="100%">
+                    
+                    <a href="https://ibb.co/rvbXqq9"><img src="https://i.ibb.co/CWJS44L/Frame-1.jpg" alt="Frame-1" class="full-width"/></a>
                 </div>
             </div>
             <div class="wrapper btn-mobile">
-                <a class="btn custom-btn-bg btn-sm px-5 py-2 my-5 col-12" href="/signup.html">Join Our Realtor Team</a>
+                <a class="btn custom-btn-bg btn-sm px-5 py-2 my-5 col-12" href="/signup">Join Our Realtor Team</a>
             </div>
         </section>
     </div>
@@ -361,7 +193,7 @@
                                 <h4>Miss Hadiza Salako</h4>
                                 <p>Working with Company has transformed the way I approach real estate. 
                                     The exclusive listings and expert support have boosted my client satisfaction
-                                     and earnings!</p>
+                                    and earnings!</p>
                             </div>
                         </div>
                     </div>
@@ -468,43 +300,13 @@
             </div>
         </div>
     </footer>
-
+  </landing-page>
 </template>
-
 <script>
-// import axios from 'axios'
-
-export default {
-  data(){
-    return{
-      data: [],
+import PlanCard from "../components/ui/PlanCard.vue";
+    export default {
+    components: {
+        PlanCard
+    }  
     }
-  },
-  mounted() {
-    axios
-      .get('http://localhost:8000/api/user/customer')
-      // .post('/user/saveuserinfo', ['guihu', 'dhijkh'])
-      .then((response) => {
-        this.data= response.data;
-        console.log(response.data);
-      })
-      .catch((error) => {
-        console.log('Error:', error.message);
-      });
-  }, 
-  methods: {
-    download(){
-      alert('');
-      let url='/new';
-      this.axios.get(`/user/downloadFileOnClick/${url}`)
-      .then((response) => {
-        this.data= response.data;
-        console.log(response.data);
-      })
-      .catch((error) => {
-        console.log('Error:', error.message);
-      });
-    }
-  }
-}
 </script>
