@@ -27,13 +27,13 @@
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active courouseladdeds1 text-left-forcourouseladded1s">
-                            <img class="landing-page-header" src="../assets/PICS/image-bg.png" alt="...">
+                            <img class="landing-page-header" src="https://res.cloudinary.com/dorjfo4ca/image/upload/v1693213699/Henry/henry/image-bg_jso1aw.png" alt="...">
                         </div>
                         <div class="carousel-item courouseladdeds1">
-                            <img class="landing-page-header" src="../assets/PICS/black-businessman-happy-expression 1.jpg" alt="black">
+                            <img class="landing-page-header" src="https://res.cloudinary.com/dorjfo4ca/image/upload/v1693213694/Henry/henry/black-businessman-happy-expression_1_ag8tdl.jpg" alt="black">
                         </div>
                         <div class="carousel-item courouseladdeds1">
-                            <img class="landing-page-header" src="../assets/PICS/image 21.jpg" alt="biss">
+                            <img class="landing-page-header" src="https://res.cloudinary.com/dorjfo4ca/image/upload/v1693213697/Henry/henry/image_21_z0shi2.jpg" alt="biss">
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                 <div class="col align-items-center">
                     <div class="custom-section-bg border-radius p-5 hover-border-bottom">
                         <div class="icon-tpl text-center">
-                            <img src="../assets/SVG/Customer relationship management-rafiki 1.svg" alt="">
+                            <img src="https://res.cloudinary.com/dorjfo4ca/image/upload/v1693214098/Henry/henry/Customer_relationship_management-rafiki_1_v0q7ie.svg" alt="">
                             <h4>Lucrative Commissions</h4>
                             <p>When you collaborate with Company, you're forming a team that is committed to your success. For each successful client deal you refer to us, we provide competitive commission structures and incentives.</p>
                         </div>
@@ -79,7 +79,7 @@
                  <div class="col">
                     <div class="custom-section-bg border-radius p-5 hover-border-bottom">
                         <div class="icon-tpl text-center">
-                            <img src="../assets/SVG/Contact us-rafiki 1.svg" alt="">
+                            <img src="https://res.cloudinary.com/dorjfo4ca/image/upload/v1693214156/Henry/henry/Contact_us-rafiki_1_dwxngy.svg" alt="">
                             <h4>Expert Support</h4>
                             <p>We are your partners in growth, not just a platform. Our knowledgeable real estate experts are available to offer advice, respond to inquiries, and share knowledge that will enable you to make wise decisions.</p>
                         </div>
@@ -88,7 +88,7 @@
                 <div class="col">
                     <div class="custom-section-bg border-radius p-5 hover-border-bottom">
                         <div class="icon-tpl text-center">
-                            <img src="../assets/SVG/Realtor-rafiki (1) 1.svg" alt="">
+                            <img src="https://res.cloudinary.com/dorjfo4ca/image/upload/v1693213655/Henry/henry/Realtor-rafiki_1_1_o0kz7e.svg" alt="">
                             <h4>Exclusive Land Listings</h4>
                             <p>Access a hand-picked collection of prime land listings in the most popular areas. We specialize in providing a variety of solutions to suit every client's individual interests, from expansive rural landscapes to urban plots.</p>
                         </div>
@@ -100,7 +100,7 @@
                 <div class="col align-items-center">
                     <div class="custom-section-bg border-radius p-5 hover-border-bottom">
                         <div class="icon-tpl text-center">
-                            <img src="../assets/SVG/Customer relationship management-rafiki 1.svg" alt="">
+                            <img src="https://res.cloudinary.com/dorjfo4ca/image/upload/v1693214098/Henry/henry/Customer_relationship_management-rafiki_1_v0q7ie.svg" alt="">
                             <h4>Lucrative Commissions</h4>
                             <p>When you collaborate with Company, you're forming a team that is committed to your success. For each successful client deal you refer to us, we provide competitive commission structures and incentives.</p>
                         </div>
@@ -109,7 +109,7 @@
                  <div class="col">
                     <div class="custom-section-bg border-radius p-5 hover-border-bottom">
                         <div class="icon-tpl text-center">
-                            <img src="../assets/SVG/Contact us-rafiki 1.svg" alt="">
+                            <img src="https://res.cloudinary.com/dorjfo4ca/image/upload/v1693214156/Henry/henry/Contact_us-rafiki_1_dwxngy.svg" alt="">
                             <h4>Expert Support</h4>
                             <p>We are your partners in growth, not just a platform. Our knowledgeable real estate experts are available to offer advice, respond to inquiries, and share knowledge that will enable you to make wise decisions.</p>
                         </div>
@@ -118,7 +118,7 @@
                 <div class="col">
                     <div class="custom-section-bg border-radius p-5 hover-border-bottom">
                         <div class="icon-tpl text-center">
-                            <img src="../assets/SVG/Realtor-rafiki (1) 1.svg" alt="">
+                            <img src="https://res.cloudinary.com/dorjfo4ca/image/upload/v1693213655/Henry/henry/Realtor-rafiki_1_1_o0kz7e.svg" alt="">
                             <h4>Exclusive Land Listings</h4>
                             <p>Access a hand-picked collection of prime land listings in the most popular areas. We specialize in providing a variety of solutions to suit every client's individual interests, from expansive rural landscapes to urban plots.</p>
                         </div>

@@ -281,12 +281,12 @@
                         <div class="border-radius custom-section-bg p-4">
                             <div class="payment-header d-flex justify-content-between">
                                 <p><i class="fa fa-credit-card-alt iconi" aria-hidden="true" style="width: 30px;"></i>Pay with Visa QR Code</p>
-                                <p><img src="assets/SVG/Vector (14).svg" alt=""></p>
+                                <p><img src="https://res.cloudinary.com/dorjfo4ca/image/upload/v1693214019/Henry/henry/Vector_14_nqapyt.svg" alt=""></p>
                             </div>
                             <p>Scan the QR code below in your FirstBank, Access, Zenith, Access, Access Diamond, Fidelity, or Polaris Bank mobile application to complete the payment.</p>
                             <div class="align-items-center justify-content-between">
                                 <div class="input-field my-3">
-                                    <img src="assets/SVG/vaadin_qrcode.svg" width="30%" alt="">
+                                    <img src="https://res.cloudinary.com/dorjfo4ca/image/upload/v1693214019/Henry/henry/vaadin_qrcode_x6h9ap.svg" width="30%" alt="">
                                 </div>
                             </div>
                         </div>
