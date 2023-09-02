@@ -29,7 +29,7 @@
         </div>
     </section>
   </auth-page>
-</template>
+</template>array()
 
 <script>
     export default {

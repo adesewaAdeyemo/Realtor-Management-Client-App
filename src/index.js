@@ -12,27 +12,27 @@ faqItems.forEach((item) => {
 
 
 
-// const countdownElement = document.getElementById("countdown");
-// const a = document.querySelector(".a");
+const countdownElement = document.getElementById("countdown");
+const a = document.querySelector(".a");
 
-// let seconds = 59;
+let seconds = 59;
 
-// const countdownInterval = setInterval(() => {
-// seconds--;
+const countdownInterval = setInterval(() => {
+seconds--;
 
-// const minutesText = Math.floor(seconds / 60)
-//     .toString()
-//     .padStart(2, "0");
-// const secondsText = (seconds % 60).toString().padStart(2, "0");
-// const timeText = `${minutesText}:${secondsText}`;
+const minutesText = Math.floor(seconds / 60)
+    .toString()
+    .padStart(2, "0");
+const secondsText = (seconds % 60).toString().padStart(2, "0");
+const timeText = `${minutesText}:${secondsText}`;
 
-// countdownElement.textContent = timeText;
+countdownElement.textContent = timeText;
 
-// if (seconds === 0) {
-//     clearInterval(countdownInterval);
-//     countdownElement.style.color = "#000";
-// }
-// }, 1000);
+if (seconds === 0) {
+    clearInterval(countdownInterval);
+    countdownElement.style.color = "#000";
+}
+}, 1000);
 
 
 

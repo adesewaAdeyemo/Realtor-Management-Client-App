@@ -1,3 +1,4 @@
+
 body{
     font-family: 'Poppins', sans-serif !important;
     max-width: 100% !important;
@@ -123,6 +124,9 @@ a:hover, .item:hover{
     padding-right: 60px !important;
     /* margin-left: 30px !important;
     margin-right: 30px !important; */
+}
+.mr{
+    margin-right: 30px !important;
 }
 .price-row{
     color: #524d47 !important;
@@ -309,6 +313,77 @@ input[type=radio]{
 .usep:hover::placeholder{
     color: #fff !important;
 }
+
+.heronav a, .heroicon,.heroiconn,.heroiconlg, .herobg{
+    color: #fff !important;
+}
+.heroiconlg{
+    font-size: 25px !important;
+}
+.heroiconn{
+    font-size: 12px !important;
+}
+.heronav a:hover, .heroicon:hover{
+    color: #f3cfbc !important;
+}.hero-btn-blank:hover{
+    background-color: transparent !important;
+    outline: 1px solid #fff !important;
+}
+.hero-btn-blank{
+    background-color: #f09b6d !important;
+    color: #fff !important;
+}
+ul.align-items-center{
+    padding: 0 !important;
+}
+.herobg{
+    /* background: #DC4D01 !important; */
+    background: rgb(255, 94, 0) !important;
+}
+.hero-section{
+    padding: 50px 0 100px !important;
+}
+.hero-card{
+    margin-top: -90px !important;
+    color: #4d2510 !important;
+}
+.hero-carrd{
+    color: #250e02 !important;
+}
+.change-flex{
+    display: flex !important;
+}
+.hero-card-txt{
+    color:#9cbd76
+}
+.hero-card-amout{
+    margin-top: -10px !important;
+}
+.hero-card-icon{
+    font-size: 32px;
+}
+.herobg .wrapper nav ul li img{
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 50%;
+}
+.sub1{
+   margin-right: 50px !important; 
+   height: 450px !important; 
+}
+.sub2{
+    height: 450px !important;
+}
+.barheight{
+    height: 300px !important;
+    width: 100% !important;
+}
+.app-bg{
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+
 @media screen and (max-width: 1400px) {
 h1{
     font-size: 46px !important;
@@ -343,11 +418,16 @@ h3{
     width: 90% !important;
     padding: 0 !important;
 } */
+
 }
 @media screen and (min-width: 784px) {
     .header-section{
         padding: 50px 0 !important;
     }
+    .change-flex{
+    display: block !important;
+}
+
 }
 
 @media screen and (max-width: 784px) {
@@ -394,7 +474,7 @@ h4{
 }
 .dropdown-item:hover{
     background: rgb(240, 240, 240, 0.6) !important;
-    color: #4e2b17 !important;
+    color: #2b1603 !important;
 }
 p{
     font-size: 16px !important;
@@ -445,5 +525,24 @@ form{
 input{
     padding: 5px 10px !important;
 }
+.hero-section{
+    padding: 50px 0 70px !important;
+}
+
+.hero-card{
+    margin-top: -70px !important;
+}
+.sub1{
+   margin-right: 0px !important; 
+   margin-bottom: 40px !important; 
+}
+.hero-carrd .d-flex{
+    flex-direction: column !important;
+}
+.max-width{
+    max-width: 100%;
+    overflow-x: scroll;
+}
+
 
 }

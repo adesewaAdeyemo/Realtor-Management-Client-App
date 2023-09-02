@@ -9,13 +9,16 @@
 
             <form id='form' @submit.prevent="submitForm" class="px-5">
                 <div :class="{invalid: validity.codeValidity === 'invalid'}">
-                    <label for="code">Enter verification code</label>
+                    <label for="name">Enter verification code</label>
                     <input id='code' class="form-control form-control-md" type="text" placeholder="Verificatin code" v-model.number="code" @blur="validateInput('code')">
-                    <p v-if="validity.coedeValidity === 'invalid'">Please enter a Email!</p>
+                    <p v-if="validity.coedeValidity === 'invalid'">invalid Code!</p>
+                    <div class="text-right py-1">
+                        <a href="" class="a">Resend Code <span id="countdown">00:00</span></a>
+                    </div>
                 </div>
 
                 <div class="text-center">
-                    <button type="submit" class="btn custom-btn-bg btn-sm px-5 py-2 my-3 col-12" href="/verifycode">Continue</button>
+                    <button type="submit" class="btn custom-btn-bg btn-sm px-5 py-2 my-3 col-12" href="/">Submit</button>
                 </div>
             </form>
 
@@ -37,7 +40,7 @@
                 const data = {
                     'code': this.code,
                 };
-                this.$router.push('/verifycode');
+                this.$router.push('/');
             },
 
             validateInput(item) {
