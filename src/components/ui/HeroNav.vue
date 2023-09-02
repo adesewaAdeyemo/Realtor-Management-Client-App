@@ -9,18 +9,18 @@
 
                 <ul style="margin-bottom: 0px" class="d-flex justify-content-between align-items-center">
                 <li class="item button">
-                    <a :class="{ 'btn hero-btn-blank btn-sm px-4 py-2 mx-5': activeNavItem === 'dashboard' }" href="/dashboard" @click.prevent="changeactive('dashboard')">
-                    <span class="heroicon">&#10004</span> Dashboard
+                    <a :class="{ 'btn hero-btn-blank': activeNavItem == 'dashboard'}" class="btn-sm px-4 py-2 mx-5" href="" @click.prevent="changeactive('dashboard')">
+                    <i class="bi bi-house-door"></i>  Dashboard
                     </a>
                 </li>
                 <li class="item button">
-                    <a :class="{ 'btn hero-btn-blank btn-sm px-4 py-2 mx-5': activeNavItem === 'realtors' }" href="/realtors" @click.prevent="changeactive('realtors')">
-                    <span class="heroicon">&#10004</span> Realtor
+                    <a :class="{ 'btn hero-btn-blank': activeNavItem == 'realtors'}" class="btn-sm px-4 py-2 mx-5" href="" @click.prevent="changeactive('realtors')">
+                    <i class="bi bi-bell"></i>  Realtor
                     </a>
                 </li>
                 <li class="item button px-5">
-                    <a :class="{ 'btn hero-btn-blank btn-sm px-4 py-2 mx-5': activeNavItem === 'properties' }" href="properties" @click.prevent="changeactive('properties')">
-                    <span class="heroicon">&#10004</span> Properties
+                    <a :class="{ 'btn hero-btn-blank': activeNavItem == 'properties'}" class="btn-sm px-4 py-2 mx-5" href="" @click.prevent="changeactive('properties')">
+                    <i class="bi bi-bell"></i>  Properties
                     </a>
                 </li>
                 </ul>
@@ -54,9 +54,9 @@
                     <span class="heroicon">&#9776</span>
                 </span>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/dashboard">Dashboard</a></li>
-                    <li><a class="dropdown-item" href="/realtor">Realtor</a></li>
-                    <li><a  class="dropdown-item" href="/properties">Properties</a></li>
+                    <li><a class="dropdown-item" href="/dashboard"><i class="bi bi-house-door"></i>Dashboard</a></li>
+                    <li><a class="dropdown-item" href="/realtor"><i class="bi bi-bell"></i>Realtor</a></li>
+                    <li><a  class="dropdown-item" href="/properties"><i class="bi bi-bell"></i>Properties</a></li>
                 </ul>
             </div>
         </nav>
@@ -65,6 +65,8 @@
     </div>
 </template>
 <script>
+// import router from '../../router';
+
 export default {
   data() {
     return {
@@ -75,9 +77,11 @@ export default {
   methods:{
     changeactive(nav){
         this.activeNavItem = nav;
+        this.$router.push(nav);
     }
   },
 };
+
 </script>
 
 <style scoped>
