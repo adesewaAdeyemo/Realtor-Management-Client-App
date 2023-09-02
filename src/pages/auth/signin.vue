@@ -48,7 +48,7 @@
                 };
                 alert(data.email);
 
-                this.$router.push('/');
+                this.$router.push('/dashboard');
             },
 
             validateInput(item) {

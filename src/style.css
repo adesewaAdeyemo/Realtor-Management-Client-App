@@ -379,7 +379,7 @@ ul.align-items-center{
     width: 100% !important;
 }
 .app-bg{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: #f2f2f2;
 }
 
