@@ -19,7 +19,7 @@
                     <h4 class="">{{ property.amount }}</h4>
                 </div>
                 <div class="card-body-2">
-                    <p class="card-text">{{ property.size }}sqm</p>
+                    <p class="card-text"><i class="bi bi-rulers"></i>{{ property.size }}sqm</p>
                     <p class="view-all">View All</p>
                 </div>
             </div>
@@ -103,7 +103,7 @@ h4{
     font-weight: 500;
 }
 .card-body-2{
-    margin-top: 30px;
+    margin-top: 20px;
     /* text-align: end; */
 }
 .card-body{
