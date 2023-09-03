@@ -70,7 +70,6 @@
                     'phone': this.phone,
                     'password': this.password
                 };
-                alert(data.email);
 
                 console.log('submitted');
                 this.$router.push('/signin');

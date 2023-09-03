@@ -54,9 +54,9 @@
                     <span class="heroicon">&#9776</span>
                 </span>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/dashboard"><i class="bi bi-house-door"></i>Dashboard</a></li>
-                    <li><a class="dropdown-item" href="/realtor"><i class="bi bi-bell"></i>Realtor</a></li>
-                    <li><a  class="dropdown-item" href="/properties"><i class="bi bi-bell"></i>Properties</a></li>
+                    <li><a class="dropdown-item" href="" @click.prevent="changeactive('dashboard')"><i class="bi bi-house-door"></i>Dashboard</a></li>
+                    <li><a class="dropdown-item" href="" @click.prevent="changeactive('realtors')"><i class="bi bi-bell"></i>Realtor</a></li>
+                    <li><a  class="dropdown-item" href="" @click.prevent="changeactive('properties')"><i class="bi bi-bell"></i>Properties</a></li>
                 </ul>
             </div>
         </nav>

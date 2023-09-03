@@ -15,7 +15,8 @@ import Test from "./pages/test.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: "/", redirect: "/realtor" },
+    // { path: "/", redirect: "/realtor" },
+    { path: "/", redirect: "/signin" },
     { path: "/realtor", component: LandingPage },
     { path: "/signin", component: SignIn },
     { path: "/signup", component: SignUp },

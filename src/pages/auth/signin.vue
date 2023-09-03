@@ -46,7 +46,6 @@
                     'email': this.email,
                     'password': this.password
                 };
-                alert(data.email);
 
                 this.$router.push('/dashboard');
             },

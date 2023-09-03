@@ -111,4 +111,24 @@ h4{
     padding: 10px 0 0 0;
 
 }
+@media screen and (max-width: 600px) {
+h5{
+    font-size: 14px !important;
+}
+h4{
+    font-size: 16px !important;
+}
+.card-body-2{
+    margin-top: 0px !important;
+}
+.view-all{
+    font-size: 14px !important;
+}
+.card-body{
+    display: inline !important;
+}
+.card{
+    margin: 10px;
+}
+}
 </style>
