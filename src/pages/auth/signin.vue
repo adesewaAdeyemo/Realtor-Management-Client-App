@@ -10,13 +10,13 @@
             <form id='form' @submit.prevent="submitForm" class="px-5">
                 <div :class="{invalid: validity.emailValidity === 'invalid'}">
                     <label for="email">Enter Email Address</label>
-                    <input id='email' class="form-control form-control-md" type="email" placeholder="Enter Email Address" v-model.lazy="email" @blur="validateInput('email')">
+                    <input id='email' class="form-control form-control-md" type="email" placeholder="" v-model.lazy="email" @blur="validateInput('email')">
                     <p v-if="validity.emailValidity === 'invalid'">Please enter a Email!</p>
                 </div>
 
                 <div>
                     <label for="password">Enter Password</label>
-                    <input id='password' class="form-control form-control-md" type="password" placeholder="Enter Password" v-model="password">
+                    <input id='password' class="form-control form-control-md" type="password" placeholder="" v-model="password">
                 </div>
 
                 <div class="text-center">
