@@ -2,7 +2,7 @@
   <div class="app-bg">
   <hero-nav/>
   <div class="herobg">
-    <div class="wrapper">
+    <div class="nav-wrapper">
         <div class="d-flex justify-content-between hero-section">
             <div class="">
                 <h2>Welcome {{ name }}!</h2>
@@ -34,7 +34,8 @@
   </div>
 </template>
 <script>
-    import FullNav from "/src/components/ui/FullNav.vue";
+    import { styleType } from "element-plus/es/components/table-v2/src/common";
+import FullNav from "/src/components/ui/FullNav.vue";
 
     export default {
         props:[],
@@ -75,3 +76,10 @@
     }
 }
 </script>
+<style>
+@media screen and (max-width: 784px) {
+    .nav-wrapper{
+        width: 100% !important;
+    }
+}
+</style>
