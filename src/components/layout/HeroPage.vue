@@ -2,7 +2,7 @@
   <div class="app-bg">
   <hero-nav/>
   <div class="herobg">
-    <div class="nav-wrapper">
+    <div class="wrapper">
         <div class="d-flex justify-content-between hero-section">
             <div class="">
                 <h2>Welcome {{ name }}!</h2>
@@ -14,7 +14,7 @@
         </div>
     </div>
   </div>
-  <div class="wrapper">
+  <div class="nav-wrapper">
     <div class="d-flex gx-5 hero-card max-width">
     <div
         v-for="(idata, index) in data"
@@ -34,7 +34,7 @@
   </div>
 </template>
 <script>
-    import { styleType } from "element-plus/es/components/table-v2/src/common";
+    // import { styleType } from "element-plus/es/components/table-v2/src/common";
 import FullNav from "/src/components/ui/FullNav.vue";
 
     export default {
