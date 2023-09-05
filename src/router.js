@@ -3,6 +3,9 @@ import { createRouter, createWebHistory } from 'vue-router';
 import LandingPage from "./pages/landingPage.vue";
 import SignIn from "./pages/auth/signin.vue";
 import SignUp from "./pages/auth/signup.vue";
+import Forgot from "./pages/auth/forgot.vue";
+import ForgotCode from "./pages/auth/forgotcode.vue";
+import ResetPassword from "./pages/auth/resetPassword.vue";
 import Verify from "./pages/auth/verify.vue";
 import VerifyCode from "./pages/auth/verifyCode.vue";
 import Subscribe from "./pages/subscribe.vue";
@@ -20,6 +23,9 @@ const router = createRouter({
     { path: "/realtor", component: LandingPage },
     { path: "/signin", component: SignIn },
     { path: "/signup", component: SignUp },
+    { path: "/forgot", component: Forgot },
+    { path: "/forgot-code", component: ForgotCode },
+    { path: "/reset-password", component: ResetPassword },
     { path: "/verify", component: Verify },
     { path: "/verifycode", component: VerifyCode },
     { path: "/subscribe", component: Subscribe },
