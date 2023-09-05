@@ -19,7 +19,7 @@
     <div
         v-for="(idata, index) in data"
         :key="index"
-        :class="['col', index !== data.length - 1 ? 'mr' : '']"
+        :class="['col-md-4 col-sm-12', index !== data.length - 1 ? 'mr' : '']"
     >
         <base-card class="hero-carrd">
             <span class="hero-card-icon" v-html="idata.icon"></span>
