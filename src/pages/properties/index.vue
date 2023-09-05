@@ -6,7 +6,7 @@
         <p class="view-all">View All</p>
       </div>
       <div v-for="(propertyGroup, rowIndex) in propertyGroups" :key="rowIndex" class="row py-3 my-3" >
-        <div class="col" v-for="(property, index) in propertyGroup" :key="index">
+        <div class="col-md-3 col-sm-12 card-col" v-for="(property, index) in propertyGroup" :key="index">
           <div class="card p-3" style="margin-bottom: 20px;">
             <div class= "p-absolute">
                 <span class="for-sale">For sale</span>
@@ -124,11 +124,15 @@ h4{
 .view-all{
     font-size: 14px !important;
 }
-.card-body{
+/* .card-body{
     display: inline !important;
-}
+} */
 .card{
     margin: 10px;
+}
+.card-col{
+  width: 100% !important;
+  margin-bottom: 20px;
 }
 }
 </style>
