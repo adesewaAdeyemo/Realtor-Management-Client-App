@@ -14,7 +14,7 @@
         </div>
     </div>
   </div>
-  <div class="nav-wrapper">
+  <div class="wrapper">
     <div class="d-flex gx-5 hero-card max-width">
     <div
         v-for="(idata, index) in data"
@@ -80,6 +80,7 @@ import FullNav from "/src/components/ui/FullNav.vue";
 @media screen and (max-width: 784px) {
     .nav-wrapper{
         width: 100% !important;
+        padding: 5px;
     }
 }
 </style>
