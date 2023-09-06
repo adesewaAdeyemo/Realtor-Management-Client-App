@@ -100,7 +100,7 @@
                                 Name cannot be empty
                             </span>
                         </div>
-                        <button class="btn custom-btn-bg btn-sm px-5 py-2" @click.prevent="showPay">Log In</button>
+                        <button class="btn custom-btn-bg btn-sm px-5 py-2" @click.prevent="showPay" v-if="!submit">Log In</button>
                     </div>
                 </div>
             </section>
@@ -152,7 +152,7 @@
                             </span>
                         </div>
                     </div>
-                    <button class="btn custom-btn-bg btn-sm px-5 py-2 col-md-3 col-sm-12" @click.prevent="showPay">Create My Account</button>
+                    <button class="btn custom-btn-bg btn-sm px-5 py-2 col-md-3 col-sm-12" @click.prevent="showPay" v-if="!submit">Create My Account</button>
                 </div>
             </section>
             <div class="border-bottom mt-3" v-if="pay"></div>
@@ -327,6 +327,7 @@
                 bankform:'',
                 authform:'signinform',
                 pay: false,
+                submit: false,
             }
         },
         // components: {
@@ -338,9 +339,11 @@
             },
             showauth(auth) {
                 this.authform = auth;
+                this.submit = false;
             },
             showPay(){
                 this.pay=true;
+                this.submit = true;
             }
             },
         }
