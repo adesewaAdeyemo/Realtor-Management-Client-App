@@ -259,15 +259,15 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="d-flex  change-flex align-items-center justify-content-between">
-                                <div class="input-field my-3 col-sm-12 col-md-5">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-6 col-sm-12 input-field my-3">
                                     <label for="gender">Enter Card Expiry Date</label>
                                     <input id='name' class="form-control form-control-md py-2" type="text" placeholder="MM/YY" aria-label="Name" name="name" onmouseout="validate(event, 'name')">
                                     <span role="alert" id="nameError" class='error' aria-hidden="true">
                                         Name cannot be empty
                                     </span>
                                 </div>
-                                <div class="input-field my-3 col-sm-12 col-md-5">
+                                <div class="col-lg-6 col-sm-12 input-field my-3">
                                     <label for="gender">CVV</label>
                                     <input id='name' class="form-control form-control-md py-2" type="text" placeholder="123" aria-label="Name" name="name" onmouseout="validate(event, 'name')">
                                     <span role="alert" id="nameError" class='error' aria-hidden="true">
