@@ -9,17 +9,17 @@ import ResetPassword from "./pages/auth/resetPassword.vue";
 import Verify from "./pages/auth/verify.vue";
 import VerifyCode from "./pages/auth/verifyCode.vue";
 import Subscribe from "./pages/subscribe.vue";
-import Dashboard from "./pages/dashboard/index.vue";
-import Realtor from "./pages/realtor/index.vue";
-import Properties from "./pages/properties/index.vue";
-import Test from "./pages/test.vue";
+// import Dashboard from "./pages/dashboard/index.vue";
+// import Realtor from "./pages/realtor/index.vue";
+// import Properties from "./pages/properties/index.vue";
+// import Test from "./pages/test.vue";
 
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    // { path: "/", redirect: "/realtor" },
-    { path: "/", redirect: "/signin" },
+    { path: "/", redirect: "/realtor" },
+    // { path: "/", redirect: "/signin" },
     { path: "/realtor", component: LandingPage },
     { path: "/signin", component: SignIn },
     { path: "/signup", component: SignUp },
@@ -29,10 +29,10 @@ const router = createRouter({
     { path: "/verify", component: Verify },
     { path: "/verifycode", component: VerifyCode },
     { path: "/subscribe", component: Subscribe },
-    { path: "/dashboard", component: Dashboard },
-    { path: "/realtors", component: Realtor },
-    { path: "/properties", component: Properties },
-    { path: "/test", component: Test },
+    // { path: "/dashboard", component: Dashboard },
+    // { path: "/realtors", component: Realtor },
+    // { path: "/properties", component: Properties },
+    // { path: "/test", component: Test },
     // {
     //   path: '/coaches/:id',
     //   component: CoachDetail,
