@@ -1,6 +1,6 @@
 <template>
 <profile-nav/>
-<div class="p-5 sub-body">
+    <div class="py-1 sub-body">
         <div class="wrapper">
             <section class="row mt-5">
                 <div class="">

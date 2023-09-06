@@ -436,7 +436,11 @@ h1{
     font-size: 30px !important;
 }
 .wrapper{
+    width: 80% !important;
+}
+.headwrapper{
     width: 85% !important;
+    margin: 0 auto;
 }
 h2, .amount{
     font-size: 28px !important;
