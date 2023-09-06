@@ -78,10 +78,10 @@
             <div class="border-bottom mt-3"></div>
         </div>
         <div class="wrapper">
-            <section class="row mt-4" id="signinform">
+            <section class="row mt-4" id="signinform" v-if="authform == 'signinform'">
                 <div class="">
                     <h5>2. Login to your account</h5>
-                    <p>Don't have an account? <span class="a" onchange="showauth('signupform')"> Sign Up</span></p>
+                    <p>Don't have an account? <a class="a" @click="showauth('signupform')"> Sign Up</a></p>
                 </div>
                 <div class="row sub-form">
                     <div class="col-md-6 col-sm-12 no-sm-padding">
@@ -100,13 +100,14 @@
                                 Name cannot be empty
                             </span>
                         </div>
+                        <button class="btn custom-btn-bg btn-sm px-5 py-2" @click.prevent="showPay">Log In</button>
                     </div>
                 </div>
             </section>
-            <section class="row mt-4 d-none" id="signupform">
+            <section class="row mt-4" id="signupform" v-if="authform == 'signupform'">
                 <div class="">
                     <h5>2. Create an account</h5>
-                    <p>Already have an account? <span class="a" onchange="showauth('signinform')"> Sign In</span></p>
+                    <p>Already have an account? <a class="a" @click="showauth('signinform')"> Sign In</a></p>
                 </div>
                 <div class="row sub-form">
                     <div class="col-md-6 col-sm-12 no-sm-padding">
@@ -151,11 +152,12 @@
                             </span>
                         </div>
                     </div>
+                    <button class="btn custom-btn-bg btn-sm px-5 py-2 col-md-3 col-sm-12" @click.prevent="showPay">Create My Account</button>
                 </div>
             </section>
-            <div class="border-bottom mt-3"></div>
+            <div class="border-bottom mt-3" v-if="pay"></div>
         </div>
-        <div class="wrapper">
+        <div class="wrapper" v-if="pay">
             <section class="row mt-4 pb-5 ">
                 <div class="">
                     <h5>3. Payment Information</h5>
@@ -200,7 +202,7 @@
 
 
 
-                    <div class="col-lg-5 col-md-12 align-items-center change-form" id="transferform">
+                    <div class="col-lg-5 col-md-12 align-items-center change-form" id="transferform" v-if="bankform == 'transferform'">
                         <div class="border-radius custom-section-bg p-4">
                             <div class="payment-header">
                                 <p><i class="fa fa-university iconi" aria-hidden="true" style="width: 30px;"></i>  Pay with bank transfer</p>
@@ -243,7 +245,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-5 col-md-12 align-items-center change-form" id="cardform">
+                    <div class="col-lg-5 col-md-12 align-items-center change-form" id="cardform" v-if="bankform == 'cardform'">
                         <div class="border-radius custom-section-bg p-4">
                             <div class="payment-header">
                                 <p><i class="fa fa-credit-card-alt iconi" aria-hidden="true" style="width: 30px;"></i>Pay with Card</p>
@@ -277,7 +279,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-5 col-md-12 align-items-center change-form" id="qrform">
+                    <div class="col-lg-5 col-md-12 align-items-center change-form" id="qrform" v-if="bankform == 'qrform'">
                         <div class="border-radius custom-section-bg p-4">
                             <div class="payment-header d-flex justify-content-between">
                                 <p><i class="fa fa-credit-card-alt iconi" aria-hidden="true" style="width: 30px;"></i>Pay with Visa QR Code</p>
@@ -322,6 +324,9 @@
             return{
                 selectedPlan: '',
                 planspan: '',
+                bankform:'',
+                authform:'signinform',
+                pay: false,
             }
         },
         // components: {
@@ -329,17 +334,14 @@
         // },
         methods: {
             showForm(formId) {
-                const forms = document.querySelectorAll(".change-form");
-
-                forms.forEach((form) => {
-                    form.style.display = "none";
-                });
-
-                const selectedForm = document.getElementById(formId);
-                if (selectedForm) {
-                    selectedForm.style.display = "block";
-                }
-                }
+                this.bankform = formId;
+            },
+            showauth(auth) {
+                this.authform = auth;
+            },
+            showPay(){
+                this.pay=true;
+            }
             },
         }
 </script>

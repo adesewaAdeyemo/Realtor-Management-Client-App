@@ -12,13 +12,13 @@ import Subscribe from "./pages/subscribe.vue";
 // import Dashboard from "./pages/dashboard/index.vue";
 // import Realtor from "./pages/realtor/index.vue";
 // import Properties from "./pages/properties/index.vue";
-// import Test from "./pages/test.vue";
+import Test from "./pages/test.vue";
 
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: "/", redirect: "/realtor" },
+    { path: "/", redirect: "/subscribe" },
     // { path: "/", redirect: "/signin" },
     { path: "/realtor", component: LandingPage },
     { path: "/signin", component: SignIn },
@@ -32,7 +32,7 @@ const router = createRouter({
     // { path: "/dashboard", component: Dashboard },
     // { path: "/realtors", component: Realtor },
     // { path: "/properties", component: Properties },
-    // { path: "/test", component: Test },
+    { path: "/test", component: Test },
     // {
     //   path: '/coaches/:id',
     //   component: CoachDetail,

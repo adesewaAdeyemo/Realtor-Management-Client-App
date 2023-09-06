@@ -275,9 +275,9 @@ label{
 .payment-header{
     font-size: 20px !important;
 }
-.change-form{
+/* .change-form{
     display: none !important;
-}
+} */
 
 .change-form input{
     background:rgb(248, 248, 248) !important;
@@ -436,7 +436,7 @@ h1{
     font-size: 30px !important;
 }
 .wrapper{
-    width: 85% !important;
+    width: 95% !important;
 }
 h2, .amount{
     font-size: 28px !important;
@@ -544,5 +544,7 @@ input{
     overflow-x: scroll;
 }
 
-
+.usep{
+    margin-bottom: 10px;
+}
 }
