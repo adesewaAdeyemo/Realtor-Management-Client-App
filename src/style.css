@@ -440,7 +440,7 @@ h1{
 }
 .headwrapper{
     width: 85% !important;
-    /* margin: 0 auto; */
+    margin-left: 7.5%;
 }
 h2, .amount{
     font-size: 28px !important;
