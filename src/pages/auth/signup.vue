@@ -60,10 +60,22 @@
                 email: '',
                 password: '',
                 validity: [fnameValidity=> 'pending',lnameValidity=> 'pending', phoneValidity=> 'pending', emailValidity=> 'pending'],
+                formIsValid: '',
             };
         },
         methods: {
             submitForm(){
+                this.formIsValid = true;
+                if (
+                    this.email === '' ||
+                    !this.email.includes('@') ||
+                    this.password.length < 6
+                ) {
+                    this.formIsValid = false;
+                    return;
+                }
+
+                this.isLoading = true;
                 const data = {
                     'name': this.fname + ' ' + this.lname,
                     'email': this.email,

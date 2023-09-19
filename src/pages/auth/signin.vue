@@ -42,11 +42,22 @@
         },
         methods: {
             submitForm(){
-                const data = {
-                    'email': this.email,
-                    'password': this.password
-                };
+                this.formIsValid = true;
+                if (
+                    this.email === '' ||
+                    !this.email.includes('@') ||
+                    this.password.length < 6
+                ) {
+                    this.formIsValid = false;
+                    return;
+                }
 
+                this.isLoading = true;
+
+                const data = {
+                    email: this.email,
+                    password: this.password,
+                };
                 this.$router.push('/dashboard');
             },
 
