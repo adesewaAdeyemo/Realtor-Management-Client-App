@@ -6,7 +6,7 @@
         <p class="view-all">View All</p>
       </div>
       <div v-for="(propertyGroup, rowIndex) in propertyGroups" :key="rowIndex" class="row py-3 my-3" >
-        <div class="col-md-3 col-sm-12 card-col" v-for="(property, index) in propertyGroup" :key="index">
+        <div class="col-lg-3 col-md-12 card-col py-2" v-for="(property, index) in propertyGroup" :key="index">
           <div class="card p-3" style="margin-bottom: 20px;">
             <div class= "p-absolute">
                 <span class="for-sale">For sale</span>

@@ -10,16 +10,16 @@ import Verify from "./pages/auth/verify.vue";
 import VerifyCode from "./pages/auth/verifyCode.vue";
 import Subscribe from "./pages/subscribe.vue";
 import Checkout from "./pages/payment/index.vue";
-// import Dashboard from "./pages/dashboard/index.vue";
-// import Realtor from "./pages/realtor/index.vue";
-// import Properties from "./pages/properties/index.vue";
+import Dashboard from "./pages/dashboard/index.vue";
+import Realtor from "./pages/realtor/index.vue";
+import Properties from "./pages/properties/index.vue";
 import Test from "./pages/test.vue";
 
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: "/", redirect: "/checkout" },
+    { path: "/", redirect: "/properties" },
     // { path: "/", redirect: "/signin" },
     { path: "/realtor", component: LandingPage },
     { path: "/signin", component: SignIn },
@@ -31,9 +31,9 @@ const router = createRouter({
     { path: "/verifycode", component: VerifyCode },
     { path: "/subscribe", component: Subscribe },
     { path: "/checkout", component: Checkout },
-    // { path: "/dashboard", component: Dashboard },
-    // { path: "/realtors", component: Realtor },
-    // { path: "/properties", component: Properties },
+    { path: "/dashboard", component: Dashboard },
+    { path: "/realtors", component: Realtor },
+    { path: "/properties", component: Properties },
     { path: "/test", component: Test },
     // {
     //   path: '/coaches/:id',

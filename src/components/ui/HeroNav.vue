@@ -8,43 +8,43 @@
                 </ul>
 
                 <ul style="margin-bottom: 0px" class="d-flex justify-content-between align-items-center">
-                <li class="item button">
-                    <a :class="{ 'btn hero-btn-blank': activeNavItem == 'dashboard'}" class="btn-sm px-4 py-2 mx-5" href="" @click.prevent="changeactive('dashboard')">
-                    <i class="bi bi-house-door"></i>  Dashboard
-                    </a>
-                </li>
-                <li class="item button">
-                    <a :class="{ 'btn hero-btn-blank': activeNavItem == 'realtors'}" class="btn-sm px-4 py-2 mx-5" href="" @click.prevent="changeactive('realtors')">
-                    <i class="bi bi-bell"></i>  Realtor
-                    </a>
-                </li>
-                <li class="item button px-5">
-                    <a :class="{ 'btn hero-btn-blank': activeNavItem == 'properties'}" class="btn-sm px-4 py-2 mx-5" href="" @click.prevent="changeactive('properties')">
-                    <i class="bi bi-bell"></i>  Properties
-                    </a>
-                </li>
+                    <li class="item button">
+                        <a :class="{ 'btn hero-btn-blank': activeNavItem == 'dashboard'}" class="btn-sm px-4 py-2 mx-5" href="" @click.prevent="changeactive('dashboard')">
+                        <i class="bi bi-house-door"></i>  Dashboard
+                        </a>
+                    </li>
+                    <li class="item button">
+                        <a :class="{ 'btn hero-btn-blank': activeNavItem == 'realtors'}" class="btn-sm px-4 py-2 mx-5" href="" @click.prevent="changeactive('realtors')">
+                        <i class="bi bi-bell"></i>  Realtor
+                        </a>
+                    </li>
+                    <li class="item button px-5">
+                        <a :class="{ 'btn hero-btn-blank': activeNavItem == 'properties'}" class="btn-sm px-4 py-2 mx-5" href="" @click.prevent="changeactive('properties')">
+                        <i class="bi bi-bell"></i>  Properties
+                        </a>
+                    </li>
                 </ul>
 
                 <ul style="margin-bottom: 0px" class="d-flex justify-content-between align-items-center">
-                <li class="item button">
-                    <a href="realtor">
-                    <span class="heroiconlg px-2"><i class="bi bi-bell"></i></span>
-                    </a>
-                </li>
-                <li class="item button">
-                    <a href="realtor mx-4">
-                    <span class="heroiconlg px-4"><i class="bi bi-gear"></i></span>
-                    </a>
-                </li>
-                <li class="item button">
-                    <a href="realtor">
-                    <span class="heroicon px-2">|</span>
-                    </a>
-                </li>
-                <li class="item button">
-                    <img src="https://res.cloudinary.com/dorjfo4ca/image/upload/v1693213697/Henry/henry/image_21_z0shi2.jpg" alt="profilepics" class="mx-1">
-                    <span class="heroiconn">&#x25BC;</span>
-                </li>
+                    <li class="item button">
+                        <a href="realtor">
+                        <span class="heroiconlg px-2"><i class="bi bi-bell"></i></span>
+                        </a>
+                    </li>
+                    <li class="item button">
+                        <a href="realtor mx-4">
+                        <span class="heroiconlg px-4"><i class="bi bi-gear"></i></span>
+                        </a>
+                    </li>
+                    <li class="item button">
+                        <a href="realtor">
+                        <span class="heroicon px-2">|</span>
+                        </a>
+                    </li>
+                    <li class="item button">
+                        <img src="https://res.cloudinary.com/dorjfo4ca/image/upload/v1693213697/Henry/henry/image_21_z0shi2.jpg" alt="profilepics" class="mx-1">
+                        <span class="heroiconn">&#x25BC;</span>
+                    </li>
                 </ul>
             </nav>        
             <nav class="d-flex justify-content-between align-items-center pt-3 mobile-nav mb-3" id="mobile-nav">

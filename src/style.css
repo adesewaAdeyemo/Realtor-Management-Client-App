@@ -425,19 +425,18 @@ h3{
     width: 90% !important;
     padding: 0 !important;
 } */
-
 }
 @media screen and (min-width: 784px) {
     .header-section{
         padding: 50px 0 !important;
     }
     .change-flex{
-    display: block !important;
-}
+        display: block !important;
+    }
 
 }
 
-@media screen and (max-width: 784px) {
+@media screen and (max-width: 1400px) {
 h1{
     padding-top: 40px !important;
     font-size: 30px !important;
@@ -581,4 +580,12 @@ input{
 .usep{
     margin-bottom: 10px;
 }
+}
+
+@media screen and (max-width: 456px) {
+    .hero-section{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
 }

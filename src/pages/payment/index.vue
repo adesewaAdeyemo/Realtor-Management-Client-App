@@ -1,7 +1,7 @@
 <template>
   <auth-page>
     <section class="center-body">
-        <div class="card col-md-6 col-sm-11 p-5">
+        <div class="card col-md-9 col-sm-11 p-5">
             <div class="check row">
             <div class="col checkout">
                 <div class="">
