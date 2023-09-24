@@ -36,7 +36,7 @@ ul li, a{
     list-style: none !important;
     color: #3a3431 !important;
 }
-input:inva
+input:invalid,
 .custom-btn-outline {
     border-color:#DC4D01 !important;
   }
@@ -442,6 +442,10 @@ h3{
     border-right: none !important;
     padding-right: 0 !important;
 }
+.scrollx{
+    overflow-x: scroll;
+}
+
 /* .line:last-child {
     margin: 20px 50px !important;
     width: 90% !important;
@@ -589,6 +593,8 @@ input{
 }
 .max-width{
     max-width: 100%;
+}
+.scrollx{
     overflow-x: scroll;
 }
 

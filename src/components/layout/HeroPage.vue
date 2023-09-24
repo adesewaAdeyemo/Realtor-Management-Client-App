@@ -15,7 +15,7 @@
     </div>
   </div>
   <div class="wrapper">
-    <div class="d-flex gx-5 hero-card max-width">
+    <div class="d-flex gx-5 hero-card max-width scrollx">
     <div
         v-for="(idata, index) in data"
         :key="index"
