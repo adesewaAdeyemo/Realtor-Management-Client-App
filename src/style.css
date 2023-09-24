@@ -334,12 +334,23 @@ input[type=radio]{
     background-color: #f09b6d !important;
     color: #fff !important;
 }
+.dashboard .hero-btn-blank{
+    border-radius: 100px !important;
+}
+.border-left{
+    height: 90px;
+    padding: 5px;
+    background-color: rgba(255, 110, 7, 0.01);
+    border-left: 4px solid #DC4D01;
+}
+
+
 ul.align-items-center{
     padding: 0 !important;
 }
 .herobg{
-    /* background: #DC4D01 !important; */
-    background: rgb(255, 94, 0) !important;
+    background: #DC4D01 !important;
+    /* background: rgb(255, 94, 0) !important; */
 }
 .hero-section{
     padding: 50px 0 100px !important;
@@ -350,15 +361,17 @@ ul.align-items-center{
 }
 .hero-carrd{
     color: #250e02 !important;
+    padding: 25px !important;
 }
 .change-flex{
     display: flex !important;
 }
 .hero-card-txt{
-    color:#9cbd76
+    color:#9cbd76;
+    padding-top: 50px;
 }
 .hero-card-amout{
-    margin-top: -10px !important;
+    /* margin-top: -10px !important; */
 }
 .hero-card-icon{
     font-size: 32px;
@@ -570,6 +583,7 @@ input{
    margin-bottom: 40px !important; 
 }
 .hero-carrd .d-flex{
+    border-radius: 20px !important;
     flex-direction: column !important;
 }
 .max-width{

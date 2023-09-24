@@ -22,9 +22,13 @@
         :class="['col', index !== data.length - 1 ? 'mr' : '']"
     >
         <base-card class="hero-carrd">
-            <span class="hero-card-icon" v-html="idata.icon"></span>
-            <p>{{ idata.role }}</p>
-            <h2 class="hero-card-amout">{{ idata.amount }}</h2>
+            <div class="d-flex justify-content-between border-left">
+                <div class="">
+                    <h2 class="hero-card-amout">{{ idata.amount }}</h2>
+                    <p>{{ idata.role }}</p>
+                </div>
+                <span class="hero-card-icon" v-html="idata.icon"></span>
+            </div>
             <i class="hero-card-txt">{{ idata.text }}</i>
         </base-card>
     </div>

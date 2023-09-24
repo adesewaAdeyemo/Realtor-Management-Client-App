@@ -8,7 +8,7 @@
                 </ul>
 
                 <ul style="margin-bottom: 0px" class="d-flex justify-content-between align-items-center">
-                    <li class="item button">
+                    <li class="item button dashboard">
                         <a :class="{ 'btn hero-btn-blank': activeNavItem == 'dashboard'}" class="btn-sm px-4 py-2 mx-5" href="" @click.prevent="changeactive('dashboard')">
                         <i class="bi bi-house-door"></i>  Dashboard
                         </a>
