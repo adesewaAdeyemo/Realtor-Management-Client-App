@@ -154,9 +154,9 @@ h4{
 .view-all{
     font-size: 14px !important;
 }
-/* .card-body{
-    display: inline !important;
-} */
+.property-card{
+    margin: 0px;
+}
 .card{
     margin: 10px;
 }

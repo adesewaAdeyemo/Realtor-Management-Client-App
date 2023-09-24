@@ -29,7 +29,17 @@
                 </div>
                 <span class="hero-card-icon" v-html="idata.icon"></span>
             </div>
-            <span class="hero-card-txt"><i class="hero-card-i">{{ idata.text }}</i>since last week</span>
+            <span class="hero-card-txt">
+                <i class="hero-card-i-up" v-if="idata.text >= 18.2">
+                    <i class="bi bi-arrow-up"></i>
+                    {{ idata.text }}% 
+                </i> 
+                <i class="hero-card-i-down" v-else>
+                    <i class="bi bi-arrow-down"></i>
+                    {{ idata.text }}% 
+                </i> 
+                since last week
+            </span>
         </base-card>
     </div>
     </div>
@@ -55,25 +65,25 @@ import FullNav from "/src/components/ui/FullNav.vue";
                 'icon':'<i class="bi bi-people-fill"></i>',
                 'role': 'Realtor',
                 'amount': '13,587',
-                'text': '18.2% ',
+                'text': '18.2 ',
             },
                 {
                 'icon':'<i class="bi bi-house-door"></i>',
                 'role': 'Realtor',
                 'amount': '13,587',
-                'text': '18.2% ',
+                'text': '18.1',
             },
                 {
                 'icon':'<i class="bi bi-person-add"></i>',
                 'role': 'Realtor',
                 'amount': '13,587',
-                'text': '18.2% ',
+                'text': '18.2 ',
             },
                 {
                 'icon':'<i class="bi bi-person-add"></i>',
                 'role': 'Realtor',
                 'amount': '13,587',
-                'text': '18.2% ',
+                'text': '18.2 ',
             },
         ]
         }
