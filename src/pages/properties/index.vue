@@ -5,13 +5,13 @@
         <h4>Property overview</h4>
         <p class="view-all">View All</p>
       </div>
-      <div v-for="(propertyGroup, rowIndex) in propertyGroups" :key="rowIndex" class="row py-3 my-3" >
-        <div class="col-lg-3 col-md-12 card-col py-2" v-for="(property, index) in propertyGroup" :key="index">
+      <div v-for="(propertyGroup, rowIndex) in propertyGroups" :key="rowIndex" class="row my-3 p-2" >
+        <div class="col-lg-3 col-md-12 card-col py-2 property-card" v-for="(property, index) in propertyGroup" :key="index">
           <div class="card p-3" style="margin-bottom: 20px;">
             <div class= "p-absolute">
                 <span class="for-sale">For sale</span>
             </div>
-            <img :src="property.img" class="card-img-top border" alt="Property Image" height="250" style="border-radius: 8px !important;">
+            <img :src="property.img" class="card-img-top border" alt="Property Image" height="216" width="280" style="border-radius: 6px !important;">
             <div class="card-body d-flex justify-content-between">
                 <div class="">
                     <h5 class="card-title">{{ property.realtor }}</h5>
@@ -66,7 +66,8 @@ export default {
 
 <style scoped>
 .row{
-    /* height: 400px !important; */
+  border-radius: 20px;
+    height: 372px !important;
     background-color: #fff;
   box-shadow: 0 2px 8px rgba(128, 123, 123, 0.26);
 }
@@ -77,6 +78,8 @@ export default {
 }
 .view-all{
   color: rgb(255, 94, 0) !important;
+  line-height: 18.2px;
+  font: 14px !important;
 }
 .card-text{
     font-size: 12px !important;
@@ -93,14 +96,17 @@ export default {
     border-radius: 0 4px 0 0;
 }
 h5{
-    font-size: 16px !important;
+    font-size: 12px !important;
     line-height: 15.6px;
     font-weight: 600;
 }
 h4{
-    font-size: 22px !important;
+    font-size: 18px !important;
     line-height: 23.4px;
     font-weight: 500;
+}
+p{
+  font-size: 10px;
 }
 .card-body-2{
     margin-top: 20px;

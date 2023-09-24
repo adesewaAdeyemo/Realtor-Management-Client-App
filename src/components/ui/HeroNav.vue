@@ -8,17 +8,17 @@
                 </ul>
 
                 <ul style="margin-bottom: 0px" class="d-flex justify-content-between align-items-center">
-                    <li class="item button dashboard">
+                    <li class="item button navbtn">
                         <a :class="{ 'btn hero-btn-blank': activeNavItem == 'dashboard'}" class="btn-sm px-3 py-2 mx-2" href="" @click.prevent="changeactive('dashboard')">
                         <i class="bi bi-house-door"></i>  Dashboard
                         </a>
                     </li>
-                    <li class="item button">
+                    <li class="item button navbtn">
                         <a :class="{ 'btn hero-btn-blank': activeNavItem == 'realtors'}" class="btn-sm px-3 py-2 mx-2" href="" @click.prevent="changeactive('realtors')">
                         <i class="bi bi-bell"></i>  Realtor
                         </a>
                     </li>
-                    <li class="item button">
+                    <li class="item button navbtn">
                         <a :class="{ 'btn hero-btn-blank': activeNavItem == 'properties'}" class="btn-sm px-3 py-2 mx-2" href="" @click.prevent="changeactive('properties')">
                         <i class="bi bi-bell"></i>  Properties
                         </a>

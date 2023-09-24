@@ -334,7 +334,7 @@ input[type=radio]{
     background-color: #f09b6d !important;
     color: #fff !important;
 }
-.dashboard .hero-btn-blank{
+.navbtn .hero-btn-blank{
     border-radius: 100px !important;
 }
 .border-left{
@@ -366,9 +366,11 @@ ul.align-items-center{
 .change-flex{
     display: flex !important;
 }
-.hero-card-txt{
+.hero-card-i{
     color:#9cbd76;
-    padding-top: 50px;
+}
+.hero-card-txt{
+    padding-top: 40px;
 }
 .hero-card-amout{
     color: #252525;
@@ -404,6 +406,10 @@ ul.align-items-center{
     padding-top: 50px;
     align-content: center;
     padding-left: 50px !important;
+}
+.property-card{
+    height: 340px;
+    width: 310px;
 }
 @media screen and (max-width: 1400px) {
 h1{
