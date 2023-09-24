@@ -5,7 +5,7 @@
         <h4>Property overview</h4>
         <p class="view-all">View All</p>
       </div>
-      <div v-for="(propertyGroup, rowIndex) in propertyGroups" :key="rowIndex" class="row my-3 p-2" >
+      <div v-for="(propertyGroup, rowIndex) in propertyGroups" :key="rowIndex" class="row my-3 p-2 prow" >
         <div class="col-lg-3 col-md-12 card-col py-2 property-card" v-for="(property, index) in propertyGroup" :key="index">
           <div class="card p-3" style="margin-bottom: 20px;">
             <div class= "p-absolute">
@@ -65,10 +65,34 @@ export default {
 
 
 <style scoped>
-.row{
+/* @media screen and (min-width: 1770px) {
+.prow{
+  height: 372px !important;
+}
+} */
+@media screen and (min-width: 1000px) {
+.prow{
+  height: 420px !important;
+}
+.card-body.d-flex{
+  flex-direction: column;
+}
+.card-body-2{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 !important;
+}
+}
+@media screen and (max-width: 1000px) {
+.property-card{
+    margin: 10px;
+}
+
+}
+.prow{
   border-radius: 20px;
-    height: 372px !important;
-    background-color: #fff;
+  /* height: 372px !important; */
+  background-color: #fff;
   box-shadow: 0 2px 8px rgba(128, 123, 123, 0.26);
 }
 .card{
