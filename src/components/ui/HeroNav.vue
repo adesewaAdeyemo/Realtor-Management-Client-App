@@ -71,7 +71,7 @@ export default {
   data() {
     return {
         img: '',
-        activeNavItem: 'properties',
+        activeNavItem: 'dashboard',
     };
   },
   methods:{

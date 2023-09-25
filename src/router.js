@@ -14,12 +14,13 @@ import Checkout from "./pages/payment/index.vue";
 // import Realtor from "./pages/realtor/index.vue";
 import Properties from "./pages/properties/index.vue";
 import Test from "./pages/test.vue";
+import NotFound from "./pages/not-found.vue"
 
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: "/", redirect: "/properties" },
+    { path: "/", redirect: "/signin" },
     // { path: "/", redirect: "/signin" },
     { path: "/realtor", component: LandingPage },
     { path: "/signin", component: SignIn },
@@ -34,6 +35,7 @@ const router = createRouter({
     // { path: "/dashboard", component: Dashboard },
     // { path: "/realtors", component: Realtor },
     { path: "/properties", component: Properties },
+    { path: "/not-found", component: NotFound },
     { path: "/test", component: Test },
     // {
     //   path: '/coaches/:id',
@@ -45,7 +47,7 @@ const router = createRouter({
     // },
     // { path: '/register', component: CoachRegistation },
     // { path: '/requests', component: RequestsReceived },
-    { path: "/:notFound(.*)", component: LandingPage },
+    { path: "/:notFound(.*)", component: NotFound },
   ],
 });
 
