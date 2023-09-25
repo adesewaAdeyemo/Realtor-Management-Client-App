@@ -20,7 +20,7 @@ import NotFound from "./pages/not-found.vue"
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: "/", redirect: "/signin" },
+    { path: "/", redirect: "/signup" },
     // { path: "/", redirect: "/signin" },
     { path: "/realtor", component: LandingPage },
     { path: "/signin", component: SignIn },
